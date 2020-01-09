@@ -1,0 +1,2 @@
+#!/bin/bash
+rm -rf static && cd my-app && npm run build && cd build && cp -R * ../.. && cd ../.. && git add . && git commit -m "update" && git push
